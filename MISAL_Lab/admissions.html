@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions - MISAL Lab</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/iitp_logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero-section"
+    style="background: linear-gradient(135deg, #215e87 0%, #0d3a55 100%); position: relative; overflow: hidden; padding: 80px 0;">
+    <div class="hero-overlay"
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-3">Admissions</h1>
+          <p class="lead text-white mb-0">Course-wise admission information for research and postgraduate programmes at
+            MISAL Lab, IIT Patna.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-user-graduate display-1 text-white" style="opacity: 0.8;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="admission-notice">
+          <div class="notice-icon">
+            <i class="fas fa-circle-info"></i>
+          </div>
+          <div>
+            <h5 class="mb-2">Before You Apply</h5>
+            <p class="mb-0">Review the programme details, identify your research interest, and go through recent work
+              from the lab so your application and interview are aligned with the department's focus areas.</p>
+          </div>
+        </div>
+    </div>
+  </section>
+ <section class="pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <article class="admission-card">
+            <div class="admission-card-header">
+              <div class="program-badge-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h3 class="program-name mb-2">Ph.D. Admission</h3>
+                <p class="program-duration mb-0"><i class="fas fa-clock"></i> Full-time Research Programme</p>
+              </div>
+            </div>
+
+            <p class="lead-text">The Ph.D. admission track is intended for candidates who want to pursue advanced
+              research in microwave engineering, RF systems, integrated circuits, and related domains.</p>
+
+            <div class="accordion program-accordion" id="phdAdmissionAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#phdGeneral" aria-expanded="true">
+                    <i class="fas fa-file-lines me-2"></i> General Information
+                  </button>
+                </h2>
+                <div id="phdGeneral" class="accordion-collapse collapse show" data-bs-parent="#phdAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>Applicants should monitor the institute admission advertisement for application opening dates,
+                      fee details, required documents, and programme-specific instructions.</p>
+                    <ul>
+                      <li>Application is submitted through the official institute portal.</li>
+                      <li>Shortlisting is based on academic background, eligibility, and department criteria.</li>
+                      <li>Relevant background in electronics, electrical engineering, communication, or allied areas is
+                        expected.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#phdInterview">
+                    <i class="fas fa-comments me-2"></i> Test and Interview
+                  </button>
+                </h2>
+                <div id="phdInterview" class="accordion-collapse collapse" data-bs-parent="#phdAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>Shortlisted candidates may be called for a written test and/or interview. The evaluation usually
+                      focuses on conceptual clarity, analytical thinking, and readiness for research work.</p>
+                    <ul>
+                      <li>Core fundamentals from the candidate's discipline.</li>
+                      <li>Problem-solving approach and ability to reason from first principles.</li>
+                      <li>Alignment of research interests with MISAL Lab themes.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#phdPreparation">
+                    <i class="fas fa-lightbulb me-2"></i> Preparing for Admission
+                  </button>
+                </h2>
+                <div id="phdPreparation" class="accordion-collapse collapse" data-bs-parent="#phdAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>Applicants should revise subject fundamentals, read about ongoing research themes, and prepare a
+                      clear explanation of why they want to work in the selected area.</p>
+                    <p class="mb-0"><strong>Helpful preparation areas:</strong> microwave fundamentals, RF circuits,
+                      antennas, signals and systems, communication basics, and prior project work.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+   <section class="pb-5">
+    <div class="container">
+      <div class="row ">
+     
+
+        <div class="col-md-12">
+          <article class="admission-card featured">
+            <div class="admission-card-header">
+              <div class="program-badge-icon featured">
+                <i class="fas fa-flask"></i>
+              </div>
+              <div>
+                <h3 class="program-name mb-2">MS(Research) Admission</h3>
+                <p class="program-duration mb-0"><i class="fas fa-clock"></i> Research-Oriented Master's Programme</p>
+              </div>
+            </div>
+
+            <p class="lead-text">MS(Research) is suitable for students who want a strong research foundation with a
+              structured postgraduate pathway and thesis-focused work.</p>
+
+            <div class="accordion program-accordion" id="msAdmissionAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#msGeneral" aria-expanded="true">
+                    <i class="fas fa-file-lines me-2"></i> General Information
+                  </button>
+                </h2>
+                <div id="msGeneral" class="accordion-collapse collapse show" data-bs-parent="#msAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>The MS(Research) admission cycle follows the institute notification. Candidates should check the
+                      advertisement for programme-specific eligibility, application requirements, and selection stages.
+                    </p>
+                    <ul>
+                      <li>Applications are invited through the institute admission portal.</li>
+                      <li>Shortlisting may include academic record and relevant technical preparation.</li>
+                      <li>A good fit with lab research areas strengthens the application.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#msInterview">
+                    <i class="fas fa-comments me-2"></i> Test and Interview
+                  </button>
+                </h2>
+                <div id="msInterview" class="accordion-collapse collapse" data-bs-parent="#msAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>The selection process may include an interview or technical interaction to evaluate subject
+                      readiness, research aptitude, and suitability for guided research work.</p>
+                    <ul>
+                      <li>Questions may cover circuits, communication, devices, and mathematical basics.</li>
+                      <li>Interviewers may discuss previous projects, internships, or dissertation work.</li>
+                      <li>Candidates should be able to explain why they prefer MS(Research) over coursework-heavy
+                        options.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#msPreparation">
+                    <i class="fas fa-lightbulb me-2"></i> Preparing for Admission
+                  </button>
+                </h2>
+                <div id="msPreparation" class="accordion-collapse collapse" data-bs-parent="#msAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>Focus on technical basics, research motivation, and clarity around the kind of thesis work you
+                      want to pursue.</p>
+                    <p class="mb-0"><strong>Good preparation includes:</strong> revising core concepts, organizing
+                      project summaries, and reading about present microwave and RF research challenges.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+     
+      </div>
+    </div>
+  </section>
+  <section class="pb-5">
+    <div class="container">
+      <div class="row">
+        
+
+
+        <div class="col-md-12">
+          <article class="admission-card">
+            <div class="admission-card-header">
+              <div class="program-badge-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <div>
+                <h3 class="program-name mb-2">M.Tech Admission</h3>
+                <p class="program-duration mb-0"><i class="fas fa-clock"></i> 2-Year Postgraduate Programme</p>
+              </div>
+            </div>
+
+            <p class="lead-text">M.Tech admission is aimed at candidates looking for advanced technical training with a
+              blend of coursework, laboratory practice, and project-based specialization in RF and microwave systems.
+            </p>
+
+            <div class="accordion program-accordion" id="mtechAdmissionAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mtechGeneral" aria-expanded="true">
+                    <i class="fas fa-file-lines me-2"></i> General Information
+                  </button>
+                </h2>
+                <div id="mtechGeneral" class="accordion-collapse collapse show"
+                  data-bs-parent="#mtechAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>M.Tech admissions are conducted through the institute process for postgraduate programmes.
+                      Candidates should follow the admission advertisement for category-wise seats, eligibility, and
+                      timelines.</p>
+                    <ul>
+                      <li>Application details, deadlines, and required documents are announced by IIT Patna.</li>
+                      <li>Eligibility is based on qualifying degree requirements and institute norms.</li>
+                      <li>Preference may be given to candidates with strong fundamentals in electronics and
+                        communication systems.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mtechSelection">
+                    <i class="fas fa-list-check me-2"></i> Selection Process
+                  </button>
+                </h2>
+                <div id="mtechSelection" class="accordion-collapse collapse" data-bs-parent="#mtechAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>Selection may include merit-based shortlisting and departmental evaluation as per the current
+                      institute policy.</p>
+                    <ul>
+                      <li>GATE score and/or institute criteria may be used for shortlisting.</li>
+                      <li>Some cycles may include interview or additional interaction.</li>
+                      <li>Final selection follows programme seat availability and published norms.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mtechPreparation">
+                    <i class="fas fa-lightbulb me-2"></i> Preparing for Admission
+                  </button>
+                </h2>
+                <div id="mtechPreparation" class="accordion-collapse collapse"
+                  data-bs-parent="#mtechAdmissionAccordion">
+                  <div class="accordion-body">
+                    <p>Candidates should strengthen core ECE concepts and keep project/internship work ready for
+                      discussion.</p>
+                    <p class="mb-0"><strong>Useful focus areas:</strong> network theory, signals and systems, analog
+                      and digital circuits, communication systems, electromagnetics, and microwave engineering basics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="admission-sidebar">
+            <h2 class="section-title mb-4">Admission Workflow</h2>
+            <div class="timeline-step">
+              <span class="timeline-number">1</span>
+              <div>
+                <h6>Institute Advertisement</h6>
+                <p>Check the official admission notification for opening dates, eligibility, and instructions.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-number">2</span>
+              <div>
+                <h6>Online Application</h6>
+                <p>Submit the application form with academic records, supporting documents, and fee payment.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-number">3</span>
+              <div>
+                <h6>Shortlisting</h6>
+                <p>Eligible candidates are shortlisted according to the criteria announced for the programme.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="timeline-number">4</span>
+              <div>
+                <h6>Test / Interview</h6>
+                <p>Attend the scheduled technical evaluation and discuss your preparation and research interests.</p>
+              </div>
+            </div>
+            <div class="timeline-step mb-0">
+              <span class="timeline-number">5</span>
+              <div>
+                <h6>Offer and Joining</h6>
+                <p>Selected candidates complete institute formalities and join the programme in the announced semester.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="program-content-box h-100">
+            <h2 class="section-title mb-4">Important Notes</h2>
+            <div class="admission-resource-list">
+              <div class="resource-item">
+                <i class="fas fa-check-circle"></i>
+                <p class="mb-0">Final admission dates, eligibility conditions, and fee details should always be taken
+                  from the official IIT Patna admission notice.</p>
+              </div>
+              <div class="resource-item">
+                <i class="fas fa-check-circle"></i>
+                <p class="mb-0">Candidates should prepare a concise statement of purpose aligned with microwave, RF, or
+                  integrated system research.</p>
+              </div>
+              <div class="resource-item">
+                <i class="fas fa-check-circle"></i>
+                <p class="mb-0">Interview panels often value conceptual understanding more than memorized answers.</p>
+              </div>
+              <div class="resource-item">
+                <i class="fas fa-check-circle"></i>
+                <p class="mb-0">Relevant coursework, project reports, internships, and publications should be organized
+                  before the interview stage.</p>
+              </div>
+            </div>
+
+            <div class="admission-cta-box mt-4">
+              <h5>Need More Information?</h5>
+              <p class="mb-3">For exact admission notifications, announcements, and department-specific updates, refer
+                to the institute portal and department contact channels.</p>
+              <a href="contact.html" class="btn btn-primary">Contact MISAL Lab</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/load-components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Members - MISAL Lab</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/iitp_logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero-section"
+    style="background: linear-gradient(135deg, #215e87 0%, #0d3a55 100%); position: relative; overflow: hidden; padding: 80px 0;">
+    <div class="hero-overlay"
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-3">Faculty Members</h1>
+          <p class="lead text-white mb-0">Faculty driving research in microwave engineering, RF systems, and integrated
+            electronics at IIT Patna.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-user-tie display-1 text-white" style="opacity: 0.8;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 faculty-directory-wrap" id="faculty">
+    <div class="container">
+      <div class="faculty-directory-head">
+        <h2 class="section-title mb-2">Faculty Directory</h2>
+        <p class="text-muted mb-0">Profile cards follow a departmental listing style. Click any member to open full
+          profile details in one shared modal.</p>
+      </div>
+
+      <div class="faculty-block">
+        <h3 class="faculty-section-title">Head of Department</h3>
+        <div id="faculty-head-grid" class="faculty-grid faculty-grid-head"></div>
+      </div>
+
+      <div class="faculty-block">
+        <h3 class="faculty-section-title">Faculty</h3>
+        <div id="faculty-main-grid" class="faculty-grid"></div>
+      </div>
+
+      <div class="faculty-block mb-0">
+        <h3 class="faculty-section-title">Adjunct Faculty</h3>
+        <div id="faculty-adjunct-grid" class="faculty-grid"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="modal fade" id="facultyProfileModal" tabindex="-1" aria-labelledby="facultyProfileModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content faculty-modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="facultyProfileModalLabel">Faculty Profile</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <img id="modalFacultyPhoto" src="" alt="Faculty profile photo" class="faculty-modal-photo">
+            </div>
+            <div class="col-md-8">
+              <h4 class="mb-1" id="modalFacultyName"></h4>
+              <p class="faculty-modal-role mb-2" id="modalFacultyDesignation"></p>
+              <p class="faculty-modal-meta mb-2"><i class="fas fa-building-columns"></i> <span
+                  id="modalFacultyDepartment"></span></p>
+              <p class="faculty-modal-meta mb-2"><i class="fas fa-envelope"></i> <span id="modalFacultyEmail"></span>
+              </p>
+              <p class="faculty-modal-meta mb-2"><i class="fas fa-phone"></i> <span id="modalFacultyPhone"></span></p>
+              <h6 class="mb-2">Research Interests</h6>
+              <div class="person-tags" id="modalFacultyInterests"></div>
+            </div>
+          </div>
+          <hr>
+          <h6 class="mb-2">Profile Summary</h6>
+          <p class="mb-0" id="modalFacultyBio"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/load-components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/faculty.js"></script>
+</body>
+
+</html>
