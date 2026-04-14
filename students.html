@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students - MISAL Lab</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/iitp_logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero-section"
+    style="background: linear-gradient(135deg, #215e87 0%, #0d3a55 100%); position: relative; overflow: hidden; padding: 80px 0;">
+    <div class="hero-overlay"
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-3">Ph.D. Scholars and Student Researchers</h1>
+          <p class="lead text-white mb-0">Student community contributing to next-generation research in microwave
+            engineering, RF systems, and communication technologies.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-user-graduate display-1 text-white" style="opacity: 0.8;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="people-stats-grid">
+        <div class="people-stat-card">
+          <h3>14</h3>
+          <p class="mb-0">Current Ph.D. Scholars</p>
+        </div>
+        <div class="people-stat-card">
+          <h3>08</h3>
+          <p class="mb-0">MS(R) Researchers</p>
+        </div>
+        <div class="people-stat-card">
+          <h3>22</h3>
+          <p class="mb-0">Active Thesis Topics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5" id="students-directory">
+    <div class="container">
+      <div class="courses-shell student-directory-shell">
+        <div class="courses-shell-head">
+          <h2 class="section-title mb-2">Student Directory</h2>
+          <p class="mb-0">Tabbed directory view for doctoral, MS(Research), and project students. Student image/detail
+            block is retained in the first column.</p>
+        </div>
+
+        <ul class="nav nav-tabs courses-tabs student-tabs" id="studentDirectoryTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="phd-tab" data-bs-toggle="tab" data-bs-target="#phd-pane" type="button"
+              role="tab" aria-controls="phd-pane" aria-selected="true">Ph.D. Scholars</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ms-tab" data-bs-toggle="tab" data-bs-target="#ms-pane" type="button"
+              role="tab" aria-controls="ms-pane" aria-selected="false">MS(Research)</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="project-tab" data-bs-toggle="tab" data-bs-target="#project-pane" type="button"
+              role="tab" aria-controls="project-pane" aria-selected="false">Project Students</button>
+          </li>
+        </ul>
+
+        <div class="tab-content courses-tab-content" id="studentDirectoryTabContent">
+          <div class="tab-pane fade show active" id="phd-pane" role="tabpanel" aria-labelledby="phd-tab" tabindex="0">
+            <div class="table-responsive">
+              <table class="table course-table student-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Research Summary</th>
+                    <th>Focus Areas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="student-profile-cell">
+                        <div class="person-avatar student-avatar">PG</div>
+                        <div>
+                          <h4 class="student-name mb-1">Pooja Gupta</h4>
+                          <p class="person-role mb-1">Ph.D. Scholar | Year 4</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Guide: Prof. A. K. Sharma</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Working on compact high-efficiency power amplifier architectures for sub-6 GHz wireless
+                      systems.</td>
+                    <td>
+                      <div class="person-tags">
+                        <span>Power Amplifier</span>
+                        <span>RF Efficiency</span>
+                        <span>Hardware Validation</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="student-profile-cell">
+                        <div class="person-avatar student-avatar">RS</div>
+                        <div>
+                          <h4 class="student-name mb-1">Rahul Sinha</h4>
+                          <p class="person-role mb-1">Ph.D. Scholar | Year 3</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Guide: Dr. S. K. Mishra</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Developing wideband reconfigurable antenna arrays with adaptive beamforming support for dynamic
+                      scenarios.</td>
+                    <td>
+                      <div class="person-tags">
+                        <span>Antenna Array</span>
+                        <span>Beamforming</span>
+                        <span>Wideband Design</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="student-profile-cell">
+                        <div class="person-avatar student-avatar">AM</div>
+                        <div>
+                          <h4 class="student-name mb-1">Anjali Mishra</h4>
+                          <p class="person-role mb-1">Ph.D. Scholar | Year 2</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Guide: Dr. N. Verma</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Researching AI-assisted signal classification workflows for RF sensing and interference
+                      diagnostics.</td>
+                    <td>
+                      <div class="person-tags">
+                        <span>AI for RF</span>
+                        <span>Signal Classification</span>
+                        <span>Spectrum Analytics</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="ms-pane" role="tabpanel" aria-labelledby="ms-tab" tabindex="0">
+            <div class="table-responsive">
+              <table class="table course-table student-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Research Summary</th>
+                    <th>Focus Areas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="student-profile-cell">
+                        <div class="person-avatar student-avatar">VK</div>
+                        <div>
+                          <h4 class="student-name mb-1">Vivek Kumar</h4>
+                          <p class="person-role mb-1">MS(Research) | Year 2</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Mentor: Dr. R. Verma</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Thesis on millimeter-wave front-end integration and performance characterization under
+                      practical channel conditions.</td>
+                    <td>
+                      <div class="person-tags">
+                        <span>mmWave Front-End</span>
+                        <span>Measurement</span>
+                        <span>System Integration</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="project-pane" role="tabpanel" aria-labelledby="project-tab" tabindex="0">
+            <div class="table-responsive">
+              <table class="table course-table student-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Project Summary</th>
+                    <th>Focus Areas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="student-profile-cell">
+                        <div class="person-avatar student-avatar">ST</div>
+                        <div>
+                          <h4 class="student-name mb-1">Sneha Tiwari</h4>
+                          <p class="person-role mb-1">M.Tech Project Student</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Mentor: MISAL Faculty Team</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Designing compact substrate-integrated waveguide filters for low-loss 5G and beyond
+                      communication links.</td>
+                    <td>
+                      <div class="person-tags">
+                        <span>SIW Filters</span>
+                        <span>5G Hardware</span>
+                        <span>Prototype Design</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container">
+      <div class="people-info-shell">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6">
+            <div class="people-info-panel">
+              <h5>Student Development Activities</h5>
+              <ul class="people-list mb-0">
+                <li>Weekly paper reading and technical seminars.</li>
+                <li>Quarterly project review with faculty panel.</li>
+                <li>Conference preparation and research writing support.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="people-info-panel">
+              <h5>Join as a Student Researcher</h5>
+              <p class="mb-3">Interested candidates should review programme requirements, align with lab themes, and
+                apply through the official admission cycle.</p>
+              <a href="admissions.html" class="btn btn-primary">Explore Admission Process</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/load-components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

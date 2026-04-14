@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - MISAL Lab</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/iitp_logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero-section"
+    style="background: linear-gradient(135deg, #215e87 0%, #0d3a55 100%); position: relative; overflow: hidden; padding: 80px 0;">
+    <div class="hero-overlay"
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-3">Course Structure</h1>
+          <p class="lead text-white mb-0">Programme-wise course offerings for Ph.D., MS(Research), and M.Tech at MISAL
+            Lab, IIT Patna.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-book-open display-1 text-white" style="opacity: 0.8;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="courses-shell">
+        <div class="courses-shell-head">
+          <h2 class="section-title mb-3">Programme-wise Courses</h2>
+          <p class="mb-0">Select a programme tab to view the current semester course list and instructor details.</p>
+        </div>
+
+        <ul class="nav nav-tabs courses-tabs mt-4" id="coursesTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="phd-tab" data-bs-toggle="tab" data-bs-target="#phd-courses"
+              type="button" role="tab" aria-controls="phd-courses" aria-selected="true">
+              <i class="fas fa-graduation-cap me-2"></i> Ph.D.
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="ms-tab" data-bs-toggle="tab" data-bs-target="#ms-courses" type="button"
+              role="tab" aria-controls="ms-courses" aria-selected="false">
+              <i class="fas fa-flask me-2"></i> MS(Research)
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mtech-tab" data-bs-toggle="tab" data-bs-target="#mtech-courses" type="button"
+              role="tab" aria-controls="mtech-courses" aria-selected="false">
+              <i class="fas fa-microchip me-2"></i> M.Tech
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content courses-tab-content" id="coursesTabContent">
+          <div class="tab-pane fade show active" id="phd-courses" role="tabpanel" aria-labelledby="phd-tab">
+            <div class="course-table-header">
+              <h3>Ph.D. Coursework</h3>
+              <p class="mb-0">Semester-II 2025-2026</p>
+            </div>
+            <div class="table-responsive">
+              <table class="table course-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">EC701</a></td>
+                    <td>Advanced Microwave Engineering</td>
+                    <td>Prof. A. K. Sharma</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC703</a></td>
+                    <td>RF Circuit Analysis and Design</td>
+                    <td>Dr. S. K. Mishra</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC705</a></td>
+                    <td>Electromagnetic Theory for High Frequency Systems</td>
+                    <td>Prof. R. P. Singh</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC707</a></td>
+                    <td>Research Methodology and Technical Writing</td>
+                    <td>Dr. N. Verma</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC709</a></td>
+                    <td>Optimization Techniques in Communication Systems</td>
+                    <td>Dr. P. Srivastava</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="ms-courses" role="tabpanel" aria-labelledby="ms-tab">
+            <div class="course-table-header">
+              <h3>MS(Research) Coursework</h3>
+              <p class="mb-0">Semester-II 2025-2026</p>
+            </div>
+            <div class="table-responsive">
+              <table class="table course-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">EC601</a></td>
+                    <td>Microwave Devices and Applications</td>
+                    <td>Prof. A. K. Sharma</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC603</a></td>
+                    <td>Antenna Theory and Design</td>
+                    <td>Dr. R. K. Jha</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC605</a></td>
+                    <td>Digital Signal Processing for Wireless Systems</td>
+                    <td>Dr. V. Kumar</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC607</a></td>
+                    <td>Advanced Communication Networks</td>
+                    <td>Prof. M. Tiwari</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC609</a></td>
+                    <td>Seminar and Research Project</td>
+                    <td>MISAL Lab Faculty Panel</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="mtech-courses" role="tabpanel" aria-labelledby="mtech-tab">
+            <div class="course-table-header">
+              <h3>M.Tech Coursework</h3>
+              <p class="mb-0">Semester-II 2025-2026</p>
+            </div>
+            <div class="table-responsive">
+              <table class="table course-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Instructor</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">EC551</a></td>
+                    <td>RF and Microwave Circuits</td>
+                    <td>Prof. P. K. Sinha</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC553</a></td>
+                    <td>Wireless Communication Systems</td>
+                    <td>Dr. S. T. Khan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC555</a></td>
+                    <td>VLSI and Embedded Design</td>
+                    <td>Dr. A. Chaturvedi</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC557</a></td>
+                    <td>Computational Electromagnetics</td>
+                    <td>Dr. D. Prakash</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">EC559</a></td>
+                    <td>Lab Practice and Mini Project</td>
+                    <td>MISAL Lab Teaching Team</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/load-components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

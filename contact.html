@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MISAL Lab</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/iitp_logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero-section"
+    style="background: linear-gradient(135deg, #215e87 0%, #0d3a55 100%); position: relative; overflow: hidden; padding: 80px 0;">
+    <div class="hero-overlay"
+      style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.3);"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-3">Contact Us</h1>
+          <p class="lead text-white mb-0">Reach MISAL Lab for admissions, collaboration, student opportunities, lab
+            support, and general academic enquiries.</p>
+        </div>
+        <div class="col-lg-4 text-center">
+          <i class="fas fa-headset display-1 text-white" style="opacity: 0.8;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="contact-card-grid">
+        <article class="contact-info-card">
+          <div class="contact-info-icon">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+          <h5>Email</h5>
+
+          <a href="mailto:misal@iitp.ac.in">misal@iitp.ac.in</a>
+        </article>
+
+        <article class="contact-info-card">
+          <div class="contact-info-icon">
+            <i class="fas fa-phone-volume"></i>
+          </div>
+          <h5>Phone</h5>
+
+          <a href="tel:+916123029200">+91-612-302-9200</a>
+        </article>
+
+        <article class="contact-info-card">
+          <div class="contact-info-icon">
+            <i class="fas fa-location-dot"></i>
+          </div>
+          <h5>Visit the Lab</h5>
+
+          <span>IIT Patna, India</span>
+        </article>
+
+        <article class="contact-info-card">
+          <div class="contact-info-icon">
+            <i class="fas fa-user-clock"></i>
+          </div>
+          <h5>Office Hours</h5>
+
+          <span>Mon-Fri | 9:00 AM - 5:30 PM</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5" id="contact-form">
+    <div class="container">
+      <div class="contact-shell">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="contact-form-panel">
+              <div class="contact-panel-head">
+                <h2 class="section-title mb-2">Send an Enquiry</h2>
+                <p class="mb-0">Use this form format for admissions questions or research communication.</p>
+              </div>
+
+              <form class="contact-form-grid">
+                <div>
+                  <label for="contactName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your full name">
+                </div>
+                <div>
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                </div>
+                <div>
+                  <label for="contactPhone" class="form-label">Phone Number</label>
+                  <input type="text" class="form-control" id="contactPhone" placeholder="+91-XXXXXXXXXX">
+                </div>
+                <div>
+                  <label for="contactCategory" class="form-label">Enquiry Type</label>
+                  <select class="form-select" id="contactCategory">
+                    <option selected>General Enquiry</option>
+                    <option>Admissions</option>
+                    <option>Research Collaboration</option>
+                    <option>Student Opportunity</option>
+                    <option>Lab Support</option>
+                    <option>Website Update</option>
+                  </select>
+                </div>
+                <div class="contact-form-full">
+                  <label for="contactSubject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="contactSubject" placeholder="Short subject line">
+                </div>
+                <div class="contact-form-full">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="3"
+                    placeholder="Write your message, context, timeline, and any relevant details."></textarea>
+                </div>
+                <div class="contact-form-full d-flex flex-wrap gap-3 align-items-center">
+                  <button type="submit" class="btn btn-lg btn-primary">Submit Enquiry</button>
+                 
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="contact-side-stack">
+              <div class="contact-side-card">
+                <h5>Contact Routing</h5>
+                <div class="contact-routing-list">
+                  <div class="contact-routing-item">
+                    <i class="fas fa-flask"></i>
+                    <div>
+                      <strong>Research and Collaboration</strong>
+                      <p class="mb-0">Send project intent, problem statement, and collaboration scope.</p>
+                    </div>
+                  </div>
+                  <div class="contact-routing-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>
+                      <strong>Admissions and Student Queries</strong>
+                      <p class="mb-0">Mention programme, background, and area of interest clearly.</p>
+                    </div>
+                  </div>
+                  <div class="contact-routing-item">
+                    <i class="fas fa-screwdriver-wrench"></i>
+                    <div>
+                      <strong>Lab Support and Equipment</strong>
+                      <p class="mb-0">Include instrument, access window, faculty approval, and urgency.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-side-card contact-visit-card">
+                <h5>Campus Visit Guidance</h5>
+                <p>Visitors should coordinate in advance for meetings, equipment demonstrations, and academic
+                  discussions. Carry institute approval or meeting confirmation where applicable.</p>
+                <div class="contact-visit-points">
+                  <span><i class="fas fa-check-circle"></i> Prior appointment recommended</span>
+                  <span><i class="fas fa-check-circle"></i> Security gate entry may require ID</span>
+                  <span><i class="fas fa-check-circle"></i> Technical meetings are best scheduled on weekdays</span>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container">
+      <div class="people-info-shell">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6">
+            <div class="people-info-panel">
+              <h5>When You Contact Us</h5>
+              <ul class="people-list mb-0">
+                <li>Use a clear subject line and mention the relevant programme or lab function.</li>
+                <li>Include your institution, faculty reference, or project context if applicable.</li>
+                <li>For support requests, mention timeline, equipment, and expected usage window.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="people-info-panel">
+              <h5>Useful Internal Links</h5>
+              <div class="contact-link-list">
+                <a href="admissions.html">Admissions Information</a>
+                <a href="faculty.html">Faculty Directory</a>
+                <a href="staff.html">Staff Support Desk</a>
+                <a href="students.html">Student Community</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/load-components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
