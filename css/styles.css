@@ -1670,7 +1670,7 @@ html {
 
 .course-table-header h3 {
     color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -2387,6 +2387,11 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
     gap: 18px;
+}
+
+.faculty-grid-single {
+    grid-template-columns: minmax(205px, 260px);
+    justify-content: center;
 }
 
 .faculty-grid-head {
@@ -3171,7 +3176,7 @@ align-self: flex-start;
 .research-authors {
     color: #1f2937 !important;
     font-weight: 500;
-    margin-bottom: 8px !important;
+    margin-bottom: 0px !important;
 }
 
 .research-tag {
