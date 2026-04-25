@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function setActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
     navLinks.forEach(link => {
         link.classList.remove('active');
@@ -104,12 +104,12 @@ function showNotification(message, type = 'info') {
  * Setup navigation collapse on mobile when link is clicked
  */
 function setupMobileNavigation() {
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navCollapse = document.querySelector('.navbar-collapse');
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (navCollapse.classList.contains('show')) {
+            if (navCollapse && navCollapse.classList.contains('show')) {
                 const bsCollapse = new bootstrap.Collapse(navCollapse, {
                     toggle: false
                 });
