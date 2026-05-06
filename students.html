@@ -40,11 +40,15 @@
     <div class="container">
       <div class="people-stats-grid">
         <div class="people-stat-card">
+          <h3>01</h3>
+          <p class="mb-0">Post Doc</p>
+        </div>
+        <div class="people-stat-card">
           <h3>04</h3>
           <p class="mb-0">Current Ph.D. Scholars</p>
         </div>
         <div class="people-stat-card">
-          <h3>00</h3>
+          <h3>02</h3>
           <p class="mb-0">M.Tech</p>
         </div>
         <div class="people-stat-card">
@@ -66,7 +70,11 @@
 
         <ul class="nav nav-tabs courses-tabs student-tabs" id="studentDirectoryTabs" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="phd-tab" data-bs-toggle="tab" data-bs-target="#phd-pane" type="button"
+            <button class="nav-link active" id="post-doc-tab" data-bs-toggle="tab" data-bs-target="#post-doc-pane" type="button"
+              role="tab" aria-controls="post-doc-pane" aria-selected="true">Post DOC</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="phd-tab" data-bs-toggle="tab" data-bs-target="#phd-pane" type="button"
               role="tab" aria-controls="phd-pane" aria-selected="true">Ph.D. Scholars</button>
           </li>
           <li class="nav-item" role="presentation">
@@ -80,21 +88,57 @@
         </ul>
 
         <div class="tab-content courses-tab-content" id="studentDirectoryTabContent">
-          <div class="tab-pane fade show active" id="phd-pane" role="tabpanel" aria-labelledby="phd-tab" tabindex="0">
+          
+            <div class="tab-pane fade show active" id="post-doc-pane" role="tabpanel" aria-labelledby="post-doc-tab" tabindex="0">
             <div class="table-responsive">
               <table class="table course-table student-table align-middle mb-0">
                 <thead>
                   <tr>
-                    <th>Student</th>
-                    <th>Research Summary</th>
-                    <!-- <th>Focus Areas</th> -->
+                    <th>Researcher</th>
+                    <th>Profile &amp; Research</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
                       <div class="student-profile-cell">
-                        <div class="person-avatar student-avatar">GS</div>
+                        <img src="img/Brij_picture.jpg" alt="Dr. Brij Kumar Bharti" class="person-avatar student-avatar" style="object-fit: cover;">
+                        <div>
+                          <h4 class="student-name mb-1">Dr. Brij Kumar Bharti</h4>
+                          <p class="person-role mb-1">Postdoctoral Researcher</p>
+                          <p class="person-meta mb-1"><i class="fas fa-graduation-cap"></i> PhD — IIIT Allahabad</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Supervisor: Dr. Jagannath Malik</p>
+                        </div>
+                      </img>
+                    </td>
+                    <td>
+                      <p class="mb-2"><strong>Current Work:</strong> Tunable RF Circuits for NavIC reflectometry applications.</p>
+                      <p class="mb-2"><strong>Research Interests:</strong> Couplers, power dividers, filters, phase shifters, matching networks, transmission lines, microstrip and waveguide cavity slot antennas, planar integrated waveguide-based passive RF/microwave components.</p>
+                      <p class="mb-2"><strong>Publications:</strong> Research articles in IEEE Transactions, IEEE Letters, Scientific Reports, and other reputed journals.</p>
+                      <p class="mb-2"><strong>Simulation Tools:</strong> HFSS, CST Microwave Studio, Keysight ADS; hands-on expertise in fabrication and RF measurements.</p>
+                      <p class="mb-0"><strong>Service:</strong> Reviewer for IEEE and Nature portfolio publications.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade " id="phd-pane" role="tabpanel" aria-labelledby="phd-tab" tabindex="0">
+            <div class="table-responsive">
+              <table class="table course-table student-table align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th>Student</th>
+                    <th>Research Summary</th>
+                    <th>Research Area</th>
+                    <th>Organization</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="student-profile-cell">
+                        <img src="img/Gaurav_Photo.JPG" alt="Gaurav Sharma" class="person-avatar student-avatar" style="object-fit: cover;">
                         <div>
                           <h4 class="student-name mb-1">Gaurav Sharma</h4>
                           <p class="person-role mb-1">Ph.D. Scholar | Year 2</p>
@@ -102,20 +146,20 @@
                         </div>
                       </div>
                     </td>
-                    <td>Developing wideband reconfigurable antenna arrays with adaptive beamforming support for dynamic
-                      scenarios.</td>
-                    <!-- <td>
+                    <td>Developing wideband reconfigurable antenna arrays with adaptive beamforming support for dynamic scenarios.</td>
+                    <td>
                       <div class="person-tags">
                         <span>Antenna Array</span>
                         <span>Beamforming</span>
                         <span>Wideband Design</span>
                       </div>
-                    </td> -->
+                    </td>
+                    <td>&mdash;</td>
                   </tr>
                   <tr>
                     <td>
                       <div class="student-profile-cell">
-                        <div class="person-avatar student-avatar">AK</div>
+                        <img src="img/anjali.jpg" alt="Anjali Kumari" class="person-avatar student-avatar" style="object-fit: cover;">
                         <div>
                           <h4 class="student-name mb-1">Anjali Kumari</h4>
                           <p class="person-role mb-1">Ph.D. Scholar | Year 2</p>
@@ -123,17 +167,16 @@
                         </div>
                       </div>
                     </td>
-                    <td>Working on compact high-efficiency power amplifier architectures for sub-6 GHz wireless
-                      systems.</td>
-                    <!-- <td>
+                    <td>Working on compact high-efficiency power amplifier architectures for sub-6 GHz wireless systems.</td>
+                    <td>
                       <div class="person-tags">
                         <span>Power Amplifier</span>
                         <span>RF Efficiency</span>
                         <span>Hardware Validation</span>
                       </div>
-                    </td> -->
+                    </td>
+                    <td>&mdash;</td>
                   </tr>
-
                   <tr>
                     <td>
                       <div class="student-profile-cell">
@@ -145,36 +188,36 @@
                         </div>
                       </div>
                     </td>
-                    <td>Researching AI-assisted signal classification workflows for RF sensing and interference
-                      diagnostics.</td>
-                    <!-- <td>
+                    <td>Researching AI-assisted signal classification workflows for RF sensing and interference diagnostics.</td>
+                    <td>
                       <div class="person-tags">
                         <span>AI for RF</span>
                         <span>Signal Classification</span>
                         <span>Spectrum Analytics</span>
                       </div>
-                    </td> -->
+                    </td>
+                    <td>&mdash;</td>
                   </tr>
                   <tr>
                     <td>
                       <div class="student-profile-cell">
-                        <div class="person-avatar student-avatar">AR</div>
+                        <img src="img/ANANAD.jpg" alt="Anand Raj" class="person-avatar student-avatar" style="object-fit: cover;">
                         <div>
                           <h4 class="student-name mb-1">Anand Raj</h4>
-                          <p class="person-role mb-1">Ph.D. Scholar | Year 2</p>
-                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Guide: Dr. Jagannath Malik</p>
+                          <p class="person-role mb-1">Part-Time Ph.D. Scholar | July 2024 | Roll No: 2421EE22</p>
+                          <p class="person-meta mb-1"><i class="fas fa-user-tie"></i> Guide: Dr. Jagannath Malik</p>
+
                         </div>
                       </div>
                     </td>
-                    <td>Researching AI-assisted signal classification workflows for RF sensing and interference
-                      diagnostics.</td>
-                    <!-- <td>
+                    <td>Signal Space Vs RF Space Orthogonality in MIMO Systems with Metasurface-Assisted Restoration.</td>
+                    <td>
                       <div class="person-tags">
-                        <span>AI for RF</span>
-                        <span>Signal Classification</span>
-                        <span>Spectrum Analytics</span>
+                        <span>RF Signal Processing</span>
+                        <span>Metasurface</span>
                       </div>
-                    </td> -->
+                    </td>
+                    <td>India Meteorological Department<br><small class="text-muted">Scientific Assistant</small></td>
                   </tr>
                 </tbody>
               </table>
@@ -188,18 +231,34 @@
                   <tr>
                     <th>Student</th>
                     <th>Research Summary</th>
-                    <!-- <th>Focus Areas</th> -->
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      NA
+                      <div class="student-profile-cell">
+                        <img src="img/sonam.jpg" alt="Sonam Raj" class="person-avatar student-avatar" style="object-fit: cover;">
+                        <div>
+                          <h4 class="student-name mb-1">Sonam Raj</h4>
+                          <p class="person-role mb-1">M.Tech | 2024 | Roll No: 2411EE24</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Guide: Dr. Jagannath Malik</p>
+                        </div>
+                      </div>
                     </td>
+                    <td>2-Element MIMO System</td>
+                  </tr>
+                  <tr>
                     <td>
-                      NA
+                      <div class="student-profile-cell">
+                        <img src="img/ratna_priya.jpg" alt="Ratna Priya" class="person-avatar student-avatar" style="object-fit: cover;">
+                        <div>
+                          <h4 class="student-name mb-1">Ratna Priya</h4>
+                          <p class="person-role mb-1">M.Tech | 2024 | Roll No: 2411EE13</p>
+                          <p class="person-meta mb-0"><i class="fas fa-user-tie"></i> Guide: Dr. Jagannath Malik</p>
+                        </div>
+                      </div>
                     </td>
-
+                    <td>Metasurface Based Reflector</td>
                   </tr>
                 </tbody>
               </table>
